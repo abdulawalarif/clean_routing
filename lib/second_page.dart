@@ -1,3 +1,5 @@
+import 'package:clean_routing/route_names.dart';
+import 'package:clean_routing/third_page.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatefulWidget {
@@ -10,9 +12,26 @@ class SecondPage extends StatefulWidget {
 class _SecondPageState extends State<SecondPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('SecondPage!'),
+    return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Center(
+            child: Text('SecondPage!'),
+          ),
+          TextButton(
+            onPressed: () {
+              const sendingArgument = DummyModelData(
+                name: 'Abdul Awal',
+                age: 28,
+              );
+              Navigator.of(context)
+                  .pushNamed(RouteName.thirdPage, arguments: sendingArgument);
+            },
+            child: const Text('Go to the third Page'),
+          ),
+        ],
       ),
     );
   }

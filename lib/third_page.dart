@@ -14,9 +14,21 @@ class ThirdPage extends StatefulWidget {
 class _ThirdPageState extends State<ThirdPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('ThirdPage !'),
+    return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Center(
+            child: Text('Third Page!'),
+          ),
+          Text(
+              'Name: ${widget.dummyModelData.name} And Age: ${widget.dummyModelData.age}'),
+          TextButton(
+            onPressed: () {},
+            child: const Text('Some other page '),
+          ),
+        ],
       ),
     );
   }

@@ -1,14 +1,10 @@
+import 'package:clean_routing/route_names.dart';
+import 'package:clean_routing/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:mix/mix.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
-
-
- 
- 
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -21,11 +17,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      
-       home: Scaffold(
-         body: Center(child: Text('data'),),
-       ),
+      initialRoute: RouteName.splashScreen,
+      onGenerateRoute: Routes.generatedRoute,
     );
   }
 }
- 

@@ -121,3 +121,9 @@ final DummyModelData dummyModelData = settings.arguments as DummyModelData;
 1. The initial page that displays the splash screen.
 2. A simple page with a button to navigate to ThirdPage.
 3. A page that receives and displays data passed from SecondPage.
+
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

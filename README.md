@@ -5,7 +5,6 @@
 
 
 
-## Features
 
 - Overview
 - Features
@@ -15,7 +14,9 @@
 
 ##  Overview
 This project sets up a Flutter app with multiple pages and named routes, making it easy to navigate between different parts of the app. It demonstrates a basic architecture for handling route navigation, passing data between pages, and organizing the application with MaterialPageRoute and named routes.
-
+```bash
+ Navigator.of(context).pushNamed(RouteName.secondPage);
+```
 ##  Features
 - Named Routes: Navigate between screens using named routes with simple Navigator.pushNamed.
 - Passing Data Between Screens: Shows how to pass and retrieve data when transitioning between pages.
@@ -62,13 +63,12 @@ This boilerplate comes with three pages: SplashScreen, SecondPage, and ThirdPage
 ## Adding New Pages
 To add new pages and routes, follow these steps:
 
-1.  Create a new widget (for example, FourthPage).
-2.  Add a new constant in RouteName for the route:
+1.  Create a new Scaffold (for example, FourthPage).
+2.  Add a new constant in RouteName for the route.
 
 
 ```bash
 static const String fourthPage = '/fourthPage';
-
 ```
 3. Add the route handling logic in the Routes.generatedRoute function:
 
@@ -98,7 +98,6 @@ Navigator.of(context).pushNamed(RouteName.thirdPage, arguments: sendingArgument)
 
 - In ThirdPage, this data is accessed like this:
 ```bash
-
 final DummyModelData dummyModelData = settings.arguments as DummyModelData;
 ```
 
@@ -121,3 +120,13 @@ final DummyModelData dummyModelData = settings.arguments as DummyModelData;
 1. The initial page that displays the splash screen.
 2. A simple page with a button to navigate to ThirdPage.
 3. A page that receives and displays data passed from SecondPage.
+
+## Author
+
+- [@abdulawalarif](https://github.com/abdulawalarif)
+  
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+

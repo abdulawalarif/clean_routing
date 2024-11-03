@@ -35,11 +35,11 @@ class _ThirdPageState extends State<ThirdPage> {
           ),
           Text(
               'Name: ${widget.dummyModelData.name} And Age: ${widget.dummyModelData.age}'),
-          TextButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.of(context).pushNamedAndRemoveUntil(RouteName.splashScreen,(route) => false,);
             },
-            child: const Text('Some other page '),
+            child: const Text('Start again'),
           ),
         ],
       ),

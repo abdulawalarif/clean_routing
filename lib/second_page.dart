@@ -30,7 +30,7 @@ class _SecondPageState extends State<SecondPage> {
           const Center(
             child: Text('SecondPage!'),
           ),
-          TextButton(
+          ElevatedButton(
             onPressed: () {
               const sendingArgument = DummyModelData(
                 name: 'Abdul Awal',

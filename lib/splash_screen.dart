@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
           const Center(
             child: Text('SplashScreen!'),
           ),
-          TextButton(
+          ElevatedButton(
             onPressed: () {
               Navigator.of(context).pushReplacementNamed(RouteName.secondPage);
             },

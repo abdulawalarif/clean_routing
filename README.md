@@ -5,7 +5,9 @@
 
 
 
+ 
 
+ <img src="demo/routing.gif" width="20%" alt="Demo of this application" />
 - Overview
 - Features
 - Installation

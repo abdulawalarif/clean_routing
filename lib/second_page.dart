@@ -18,6 +18,16 @@ class _SecondPageState extends State<SecondPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Center(
+            child: Text(
+              '2',
+              style: TextStyle(
+                color: Colors.green,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          const Center(
             child: Text('SecondPage!'),
           ),
           TextButton(

@@ -17,11 +17,21 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Center(
+            child: Text(
+              '1',
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          const Center(
             child: Text('SplashScreen!'),
           ),
           TextButton(
             onPressed: () {
-              Navigator.of(context).pushNamed(RouteName.secondPage);
+              Navigator.of(context).pushReplacementNamed(RouteName.secondPage);
             },
             child: const Text('Go to the second Page'),
           ),
